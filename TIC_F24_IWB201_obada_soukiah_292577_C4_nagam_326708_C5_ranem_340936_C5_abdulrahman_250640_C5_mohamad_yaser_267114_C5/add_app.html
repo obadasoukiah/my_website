@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">AI Applications</h1>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="apps.html">Applications</a></li>
+                <li><a href="add_app.html" class="active">Add App</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="form-section">
+            <h2>Add New Application</h2>
+            <form id="appForm">
+                <label for="appName">Application Name:</label>
+                <input type="text" id="appName" name="appName" placeholder="AppName" required>
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" placeholder="Company" required>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com" required>
+
+                <label for="isFree">Is Free:</label>
+                <select id="isFree" name="isFree">
+          <option value="Free">Free</option>
+          <option value="Paid">Paid</option>
+        </select>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+          <option value="E-Commerce">E-Commerce</option>
+          <option value="Education">Education</option>
+          <option value="Robotics">Robotics</option>
+          <option value="Healthcare">Healthcare</option>
+          <option value="Translation">Translation</option>
+        </select>
+                <label for="logo">Logo URL:</label>
+                <input type="url" id="logo" name="logo" placeholder="https://example.com/logo.png">
+
+                <label for="video">Video URL (YouTube embed):</label>
+                <input type="url" id="video" name="video" placeholder="https://youtube.com/embed/...">
+
+                <label for="audio">Audio URL (MP3):</label>
+                <input type="url" id="audio" name="audio" placeholder="https://example.com/audio.mp3">
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>AI Applications Project</h3>
+                <p>&copy; 2025 | Developed by a group of students from the Syrian Virtual University</p>
+            </div>
+            <div class="footer-right">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000" alt="Twitter"></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
